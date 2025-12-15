@@ -1,0 +1,27 @@
+2025-12-10T14:41:43.455+05:30 ERROR 1244 --- [bankingMangment] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.banking' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.banking
+    Value: "DEBUG     # your package logs"
+    Origin: class path resource [application.properties] - 29:27
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG     # your package logs)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
